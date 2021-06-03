@@ -1,0 +1,32 @@
+---
+title: "Data Memo - Fluctuation in sentiments towards COVID-19 vaccines"
+subtitle: "Hanyin Wang"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    highlight: "tango"
+    code_folding: hide
+---
+
+## Data source
+The data is originally taken from the COVID-19 [Twitter data](http://www.panacealab.org/covid19/) from the Panacea Lab. The data are available from Jan, 2020 til today and they are continuously updating. 
+
+## Why this data
+This is part of a larger research project of my own where I plan to study the population disparities in the sentiments towards COVID-19 vaccine. The data provided by the Panacea Lab are identifiers (tweet ID) of COVID-19 related tweets. From there, I hydrated the tweets (extract the content of the tweets according to the tweet IDs) and selected the vaccine-related tweets by regular expressions. Sentiment (positive, negative or neutral) of each tweet was obtained by a finetuned transfer learning model for sentiment classification. In this project, I plan to look at the temporal patterns of the sentiments. 
+
+## Visualizing the data
+There are several plots in my mind right now:
+
+1. A bar plot for the counts of tweets of each sentiment;
+2. A line chart for number of tweets of each sentiment by date;
+3. Another line chart for users that changed their mind on each date.
+
+Those items will help us the understand the distribution of overall pattern of the sentiment change over the time period.
+
+## Potential data issue
+
+- The data set can be very large since it covers the tweets for more than one year. I could potentially reduce the sample size by choosing the most recent dates, since the vaccines were not rolled out until later 2020. 
+- There might be patterns that are unexplainable when consider only the dates as independent variable, which may lead to deeper exploration of the data.
+
+

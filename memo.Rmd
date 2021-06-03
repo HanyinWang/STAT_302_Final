@@ -1,0 +1,17 @@
+---
+title: "Memo"
+subtitle: "Fluctuation in sentiments towards COVID-19 vaccines"
+output: 
+  html_document:
+    code_folding: hide
+
+---
+
+In this projects, I used processed data from Twitter to visualize the patterns in the sentiments towards COVID-19 vaccine of the users. The data contains tweets from March 1, 2020 to May 16, 2021. The key insights of the data after the visualizations are as follows:
+
+- Number of COVID-19-related tweets started to surge in November 2020, when the news of Pfizer/BioNTech news came out indicating that their vaccine is highly effective in preventing the disease. The spikes observed in Figure 1 are all correlated with widely spread news, such as the roll-out of new vaccines, or other milestone events of the vaccine development. When looking into those events, it was found that most of those events that triggers massive discussion on Twitter happened during weekdays. Therefore, in the Figure 2, I continued to explore on this point.
+- Interestingly, there are more vaccine-related tweets found on weekdays than weekends. More surprisingly, we may observe that there are more positive tweets than negative tweets during weekdays while more negative tweets than positive tweets during weekends. The possible reason for this might be the strategies of information distribution of the media. They tends to announce more positive news during the weekdays while "hiding" some of the negative ones on weekdays. This might worth a more in-depth exploration to find the direct causes.
+- Not all the users have consistent attitudes towards the vaccine during all time. Many users tend to change their minds due to the ongoing events and the information they encounter. In Figure 3, I illustrated the sentiment alternations of the users and tried to retrieve the events correlated with the changes.
+- In Figure 4 ~ 6, I tried to figure out the difference of sentiment towards COVID-19 vaccine and tested the difference in proportions by proportion test (with FDR correction for multiple testing). Hispanics tend to be the most positive sub-population towrads the vaccine while Asian tends to be more conservative when considering the vaccine as shown in the given data. When comparing genders, females tend to be more cautious towards the vaccine, the might due to the special considerations when talking about pregnancy. Among the age groups, the younger sub-population are more positive towards the vaccine than the more senior sub-population.
+
+In summary, more and more users on Twitter started to pay closer attention the COVID-19 vaccine since it rollout. But the sentiments towards the vaccines are not consistent which can be influenced by various events. There are different distributions of the sentiment among various sub-population as well. Therefore, a more detailed and customized strategy might be in need when considering vaccine promotion.
